@@ -31,17 +31,14 @@ SOURCE_SYNC_FILE="source_sync.sh"
 
 # Download source_sync from nvidia to pull appropriate kernel
 if [ ! -f "$SOURCE_SYNC_FILE" ]; then
-	wget https://jetson-items.s3.us-west-2.amazonaws.com/$SOURCE_SYNC_FILE
-	chmod +x $SOURCE_SYNC_FILE
-	echo "Downloading $SOURCE_SYNC_FILE"
+	echo "Could not find $SOURCE_SYNC_FILE"
 else
 	echo "Found $SOURCE_SYNC_FILE"
 fi
 
-# Download Wifi 5GHZ git Patch for Kernel 4.9
+# Download Wifi 5GHZ git Patch
 if [ ! -f "$WIFI_PATCH_FILE" ]; then
-	wget https://jetson-items.s3.us-west-2.amazonaws.com/$WIFI_PATCH_FILE
-	echo "Downloading $WIFI_PATCH_FILE"
+	echo "Could not find $WIFI_PATCH_FILE"
 else
 	echo "Found $WIFI_PATCH_FILE"
 fi
