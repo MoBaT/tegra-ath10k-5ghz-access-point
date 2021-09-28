@@ -1,0 +1,1 @@
+# tegra-ath10k-5ghz-access-point
