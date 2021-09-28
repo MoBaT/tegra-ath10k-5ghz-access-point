@@ -4,10 +4,10 @@
 - Remove the NO-IR restrictions on the 5GHz networks when setting up the machine in AP mode so you can broadcast on those frequencies. This only works with chips that use the ATH10k driver and has been only tested with the hardware/software specified below. 
 - WARNING: Check local regulations before using.
 
-## Hardware Requirements
+## Hardware/Software Requirements
 - Jetson AGX/NX
-- Kernel 4.9
 - [SX-PCEAC2-M2-SP Wifi Chip](https://www.mouser.com/ProductDetail/Silex-Technology/SX-PCEAC2-M2-SP?qs=CiayqK2gdcJfCb2Jvfe5kA%3D%3D&mgh=1&gclid=CjwKCAjw7rWKBhAtEiwAJ3CWLOzo2LLmCA6jMi9mLQ0Ql8lo1lGqHbRJEegoUeMXnzNuusOj5jt86BoCf_8QAvD_BwE)
+- Kernel 4.9
 
 ## How to Use
 1. Modify `hostapd.conf` file to your liking (SSID, password, etc)
