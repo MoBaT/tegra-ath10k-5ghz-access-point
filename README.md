@@ -1,5 +1,8 @@
 # tegra-ath10k-5ghz-access-point
 
+## Purpose
+- Remove the NO-IR restrictions on the 5GHz networks when setting up the machine in AP mode so you can broadcast on those frequencies. This only works with chips that use the ATH10k driver and has been only tested with the hardware/software specified below.
+
 ## Hardware Requirements
 - Jetson AGX/NX
 - Kernel 4.9
