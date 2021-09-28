@@ -16,4 +16,4 @@
       netmask 255.255.255.0
     ```
 4. Ensure `hostapd` and `dnsmasq` services are enabled and running 
-5. Run `sudo ./run.sh` to patch and build kernel modules ATH + ATH10k
+5. Run `sudo ./run.sh` to patch and build kernel modules ATH + ATH10k (This will put the domain to US. Modify the run.sh to change)
