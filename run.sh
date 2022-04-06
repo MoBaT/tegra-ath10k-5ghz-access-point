@@ -92,7 +92,7 @@ sudo sed -i "s/\(REGDOMAIN=\).*/\1$COUNTRY_CODE_PARAM/" /etc/default/crda
 if ! grep -q "DAEMON_OPTS=\"/etc/hostapd/hostapd.conf\"" /etc/default/hostapd; then
 sudo tee -a /etc/default/hostapd >/dev/null << 'EOF'
 
-DAEMON_OPTS="/etc/hostapd/hostapd.conf"
+DAEMON_CONF="/etc/hostapd/hostapd.conf"
 EOF
 fi
 
