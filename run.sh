@@ -89,7 +89,7 @@ sudo depmod
 echo "Setting regulatory country code in /etc/default/crda"
 sudo sed -i "s/\(REGDOMAIN=\).*/\1$COUNTRY_CODE_PARAM/" /etc/default/crda
 
-if ! grep -q "DAEMON_OPTS=\"/etc/hostapd/hostapd.conf\"" /etc/default/hostapd; then
+if ! grep -q "DAEMON_CONF=\"/etc/hostapd/hostapd.conf\"" /etc/default/hostapd; then
 sudo tee -a /etc/default/hostapd >/dev/null << 'EOF'
 
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
