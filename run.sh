@@ -15,6 +15,7 @@ if ! : >/dev/tcp/8.8.8.8/53; then
 	exit
 fi
 
+sudo apt-get update
 sudo apt-get install -y crda hostapd dnsmasq
 
 SCRIPT_LOCATION="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
